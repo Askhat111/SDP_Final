@@ -3,12 +3,10 @@ public class Main {
         Order order = new Order();
         order.subscribe(new Customer());
         order.subscribe(new Kitchen());
-
         order.updateStatus("Ordered");
 
         NewPayment payment = new SystemAdapter(new OldSystem());
         payment.pay(20);
-
         order.updateStatus("Ready");
     }
 }

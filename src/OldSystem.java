@@ -1,4 +1,4 @@
-class OldSystem { void oldPay(int cents) { System.out.println("Paid: " + cents + " cents"); } }
+public class OldSystem { void oldPay(int cents) { System.out.println("Paid: " + cents + " cents"); } }
 
 interface NewPayment { void pay(double dollars); }
 

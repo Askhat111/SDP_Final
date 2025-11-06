@@ -6,7 +6,7 @@ public class Main {
         order.updateStatus("Ordered");
 
         NewPayment payment = new SystemAdapter(new OldSystem());
-        payment.pay(20);
+        payment.pay(10000);
         order.updateStatus("Ready");
     }
 }
